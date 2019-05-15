@@ -30,24 +30,9 @@ def main():
     launch_date_local=resp["launch_date_local"]
     print("mission name is:",missionname)
     print("launch_date_local:", launch_date_local)
-    #pprint.pprint(resp)
     thefinalurl=resp["links"]["article_link"]
     print(thefinalurl)
     input("prese enter to access:")
     webbrowser.open(thefinalurl)
-    #bookno = input("Which book are you searching on (1-5)?")
-    #bookurl = "https://www.anapioficeandfire.com/api/books/" + bookno
-    #print(bookurl)
-    #resp = requests.get(bookurl)
-    #  pprint.pprint(resp.json())
-    #resp = resp.json()
-
-    #with open(resp['name'] + ".txt", 'a') as gotbook:
-     #   for character in resp['characters']:
-      #      charprofile = requests.get(character)
-       #     charprofile = charprofile.json()
-        #    print(charprofile['name'])
-         #   print(charprofile['name'], sep=' ', file=gotbook)
-
-####
+ 
 main()
